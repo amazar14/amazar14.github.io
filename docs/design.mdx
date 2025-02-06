@@ -1,0 +1,69 @@
+---
+sidebar_position: 9
+---
+# Design
+
+## 概要
+
+  *施工ing*
+
+## 说明
+
+### 登录
+    #### 1. 获取登录信息
+
+      用户登录后，用户信息会储存到本地，在每一个 `.vue`、`.js` 文件中都可获取。可以直接使用JSON.parse(sessionStorage.getItem('login'))
+      或使用工具函数获取（建议）
+
+      示例
+```js title=".js文件"
+  // highlight-next-line
+  import { getUserInfo } from "@/util/index.js"
+  
+  // 工具函数
+  const userInfo = getUserInfo()
+  // 如果不想用工具函数
+  const userInfo = JSON.parse(sessionStorage.getItem("login"))
+  console.log(userInfo)
+
+  // 浏览器控制台会显示 userinfo信息，userInfo.user_info获取信息
+  // {
+  //   access_token: '6e79f7be-85a1-464e-9a5a-872c80eb4ba8',
+  //   ... ,
+  //   user_info: {
+  //     username: 'xxx',
+  //     authorities: [],
+  //     ...
+  //   }
+  // }
+```
+
+```html title=".vue文件"
+  <template>
+    ...
+  </template>  
+  <script>
+    // highlight-next-line
+    import { getUserInfo } from "@/util/index.js"
+    export default{
+      data()=>{},
+      created(){
+        // highlight-next-line
+        getUserInfo()
+      },
+      mounted(){
+        // highlight-next-line
+        getUserInfo()
+      },
+      methods:{
+        // 你的函数
+        fn(){
+          // highlight-next-line
+          getUserInfo()
+        }
+      }
+    }
+  </script>
+  <style>
+  </style>
+```
