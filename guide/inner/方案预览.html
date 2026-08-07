@@ -10,7 +10,7 @@
 <script defer src="https://uatcdn.ihomecloud.com.cn/extension/web-static/doc/static/js/lib-react.cde1e94c18.js"></script>
 <script defer src="https://uatcdn.ihomecloud.com.cn/extension/web-static/doc/static/js/lib-router.4e0159fd15.js"></script>
 <script defer src="https://uatcdn.ihomecloud.com.cn/extension/web-static/doc/static/js/7235.0b25bddafc.js"></script>
-<script defer src="https://uatcdn.ihomecloud.com.cn/extension/web-static/doc/static/js/index.63c2a4906f.js"></script>
+<script defer src="https://uatcdn.ihomecloud.com.cn/extension/web-static/doc/static/js/index.d8aa176ef2.js"></script>
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="generator" content="Rspress v2.0.3">
 <link rel="icon" href="https://cdn.ihomecloud.com.cn/extension/web-static/icon/brand-icon.png">
@@ -25,9 +25,9 @@
 <p>查看全屋所有的空间方案。支持拖拽资源到软件场景、打开方案。</p>
 <p><code>尺寸： w:468 * h:612</code></p>
 <h2 class="rp-toc-include" id="2-地址"><a href="#2-地址" class="rp-header-anchor rp-link" aria-hidden="true">#</a>2. 地址</h2>
-<p>正式地址: <a href="https://help.ihomecloud.com.cn/tool/case/preview?port=xxx&amp;roomId=xxx&amp;tokenId=xxx&amp;Id=xxx&amp;zyId=xxx" target="_blank" rel="noopener noreferrer" class="rp-link">https://help.ihomecloud.com.cn/tool/case/preview?port=xxx&amp;roomId=xxx&amp;tokenId=xxx&amp;Id=xxx&amp;zyId=xxx</a></p>
-<p>测试地址: <a href="https://uat-help.ihomecloud.com.cn/tool/case/preview?port=xxx&amp;roomId=xxx&amp;tokenId=xxx&amp;Id=xxx&amp;zyId=xxx" target="_blank" rel="noopener noreferrer" class="rp-link">https://uat-help.ihomecloud.com.cn/tool/case/preview?port=xxx&amp;roomId=xxx&amp;tokenId=xxx&amp;Id=xxx&amp;zyId=xxx</a></p>
-<div class="rp-table-scroll-container rp-scrollbar"><table><thead><tr><th>参数</th><th>说明</th><th>其他</th></tr></thead><tbody><tr><td>port</td><td>端口号</td><td></td></tr><tr><td>roomId</td><td>空间ID：通过空间ID获取全屋数据</td><td>用于空间案例</td></tr><tr><td>houseJson</td><td>全屋JSON数据</td><td>用于全屋案例</td></tr><tr><td>Id</td><td>方案ID：用于获取当前方案的信息(全景地址)</td><td></td></tr><tr><td>zyId</td><td>资源Id：定位空间下标</td><td>可为空（默认第一个空间）</td></tr><tr><td>tokenId</td><td>tokenId</td><td></td></tr></tbody></table></div>
+<p>正式地址: <a href="https://help.ihomecloud.com.cn/tool/case/preview?port=xxx&amp;tokenId=xxx&amp;Id=xxx&amp;zyId=xxx" target="_blank" rel="noopener noreferrer" class="rp-link">https://help.ihomecloud.com.cn/tool/case/preview?port=xxx&amp;tokenId=xxx&amp;Id=xxx&amp;zyId=xxx</a></p>
+<p>测试地址: <a href="https://uat-help.ihomecloud.com.cn/tool/case/preview?port=xxx&amp;tokenId=xxx&amp;Id=xxx&amp;zyId=xxx" target="_blank" rel="noopener noreferrer" class="rp-link">https://uat-help.ihomecloud.com.cn/tool/case/preview?port=xxx&amp;tokenId=xxx&amp;Id=xxx&amp;zyId=xxx</a></p>
+<div class="rp-table-scroll-container rp-scrollbar"><table><thead><tr><th>参数</th><th>说明</th><th>其他</th></tr></thead><tbody><tr><td>tokenId</td><td>tokenId</td><td></td></tr><tr><td>port</td><td>端口号</td><td></td></tr><tr><td>houseJson</td><td>全屋 JSON 数据 URL</td><td></td></tr><tr><td>zyId</td><td>资源ID，用于获取全屋JSON数据</td><td>1. 如果未传 houseJson, 会根据 zyId 查找全屋 JSON 数据 <br/> 2. 根据 <strong>资源 Id</strong> 定位空间下标</td></tr><tr><td>designCircleCaseId</td><td>设计圈方案ID</td><td>如果全屋JSON中没有全景链接，会回退使用 <strong>设计圈方案ID</strong> 查找全景链接</td></tr></tbody></table></div>
 <h2 class="rp-toc-include" id="3-设计软件通信"><a href="#3-设计软件通信" class="rp-header-anchor rp-link" aria-hidden="true">#</a>3. 设计软件通信</h2>
 <h3 class="rp-toc-include" id="31-打开方案"><a href="#31-打开方案" class="rp-header-anchor rp-link" aria-hidden="true">#</a>3.1 打开方案</h3>
 <p>点击 <code>打开方案</code> | <code>无墙应用</code> 。与 <a href="/guide/inner/%E8%AE%BE%E8%AE%A1%E5%9C%88.html#313-%E6%89%93%E5%BC%80%E6%A1%88%E4%BE%8B" class="rp-link">设计圈-打开案例</a> 一致。</p>
